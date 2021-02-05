@@ -13,21 +13,13 @@ body {
 
 
 /****************************************************************
-    NAVBAR
+    HEADER
 */
 
 /* SPOSTARE COLLAPSE DA 768 A 992 
 
-
-
 Changing the collapsed mobile navbar breakpoint
 The navbar collapses into its vertical mobile view when the viewport is narrower than @grid-float-breakpoint, and expands into its horizontal non-mobile view when the viewport is at least @grid-float-breakpoint in width. Adjust this variable in the Less source to control when the navbar collapses/expands. The default value is 768px (the smallest "small" or "tablet" screen).
-
-
-
-
-
-
 
 */
 
@@ -75,7 +67,18 @@ The navbar collapses into its vertical mobile view when the viewport is narrower
   /* height: 400px; */
 }
 
+/****************************************************************
+    MAIN
+*/
 
+#sticky {
+  position: fixed;
+  /* left: 0; */
+  bottom: 0;
+  z-index: 9999;
+  width: 100px;
+  height: 100px;
+}
 
 /****************************************************************
     UTILITY
@@ -119,7 +122,10 @@ padding-bottom: 30px;
 */
 
 /* XS default */
-
+#sticky {
+  left: 0;
+  background-color: yellow;
+}
   
 /* SM >= 768 */
 @media screen and (min-width: 768px) {
@@ -127,7 +133,10 @@ padding-bottom: 30px;
 }
 /* MD >= 992 */
 @media screen and (min-width: 992px) {
-
+  #sticky {
+    right: 0;
+    background-color: green;
+  }
 }
 /* LG >= 1200 */
 @media screen and (min-width: 1200px) {
