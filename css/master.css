@@ -96,9 +96,10 @@ The navbar collapses into its vertical mobile view when the viewport is narrower
 .ms_bg_grey1 { background-color: #F3F5F9; }
 .ms_bg_blue1 { background-color: #0063FF; }
 .ms_bg_blue2 { background-color: #102657; }
+.ms_bg_blue3 { background-color: #031B4E; }
 /* text colors */
 .ms_tx_white { color: white; }
-.ms_tx_blue1 { color: #031B4E; }
+.ms_tx_blue1 { color: #0063FF; }
 /* standard vertical paddings */
 .ms_padding_vert_std {
 padding-top: 100px;
