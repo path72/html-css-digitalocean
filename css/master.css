@@ -154,18 +154,21 @@ body {
     SPONSORS
 */
 #sponsors .ms_sponsor_logo {
-  padding-top: 38%;
+  padding-top: 27%;
 }
 #sponsors img {
   transform: translateY(-50%);
-  width: 100%;
+  width: 80%;
 }
 #sponsors h3 {
+  color: #868686;
   font-size: 1.2em;
   font-weight: 700;
 }
 #sponsors a {
+  display: inline-block;
   color: #0063FF;
+  padding-bottom: 20px;
 }
 
 
