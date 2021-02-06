@@ -9,6 +9,7 @@
 }
 body {
   font-family: 'Inter', sans-serif;
+  font-size: 12px;
 }
 
 
@@ -16,19 +17,18 @@ body {
     HEADER
 */
 
-/* SPOSTARE COLLAPSE DA 768 A 992 
 
-Changing the collapsed mobile navbar breakpoint
-The navbar collapses into its vertical mobile view when the viewport is narrower than @grid-float-breakpoint, and expands into its horizontal non-mobile view when the viewport is at least @grid-float-breakpoint in width. Adjust this variable in the Less source to control when the navbar collapses/expands. The default value is 768px (the smallest "small" or "tablet" screen).
-
-*/
 
 #navbar {
   /* height: 80px; */
   border: 1px solid red;
+  font-weight: 700;
 }
 #navbar img {
   height: 100%;
+}
+#navbar .nav>li>a {
+  padding: 15px 10px;
 }
 #navbar .navbar {
   border: none;
