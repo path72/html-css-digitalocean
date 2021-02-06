@@ -14,21 +14,22 @@ body {
 
 
 /****************************************************************
-    HEADER
+    NAVBAR
 */
-
-
-
 #navbar {
   /* height: 80px; */
   border: 1px solid red;
   font-weight: 700;
 }
-#navbar img {
+#navbar .navbar-brand img {
   height: 100%;
+  margin-right: 35px;
+}
+#navbar .navbar-brand {
+  padding: 12px 15px;
 }
 #navbar .nav>li>a {
-  padding: 15px 10px;
+  padding: 15px 8px;
 }
 #navbar .navbar {
   border: none;
@@ -37,27 +38,30 @@ body {
 #navbar .navbar-default {
   background-color: white;
 }
-#navbar .btn.ms_btn {
-  /* height: 100%; */
+#navbar .navbar-default .navbar-nav>li>a:not(.ms_btn) {
+  color: #102657;
+}
+#navbar .navbar-default .navbar-nav>li>a:not(.ms_btn):hover {
+  color: #0063FF;
+}
+#navbar .navbar-default .navbar-nav>li>a.ms_btn {
   padding: 8px;
   border: 1px solid #006AFF;
   border-radius: 3px;
   margin-top: 9px;
   line-height: 100%;
+  color: #006AFF;
 }
-#navbar .navbar-nav>li>a {
-  /* padding-top: 0; */
-  /* padding-bottom: 0; */
-}
-
-/* text color */
-.navbar-default .navbar-nav>li>a {
-  color: #777;
+#navbar .navbar-default .navbar-nav>li>a.ms_btn:hover {
+  color: white;
+  background-color: #006AFF;
 }
 #navbar .btn-group-lg>.btn, .btn-lg {
   font-size: inherit;
 }
-
+#navbar .navbar-default .navbar-nav>li>a .fas {
+  font-size: 1.2em;
+}
 
 /****************************************************************
     JUMBOTRON
@@ -103,6 +107,7 @@ body {
 /* text colors */
 .ms_tx_white { color: white; }
 .ms_tx_blue1 { color: #0063FF; }
+.ms_tx_blue2 { color: #102657; }
 /* standard vertical paddings */
 .ms_padding_vert_std {
 padding-top: 100px;
