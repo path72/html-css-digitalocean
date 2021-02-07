@@ -167,7 +167,7 @@ body {
 */
 #deploy span {
   display: inline-block;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 #deploy ul {
   list-style: none;
@@ -178,6 +178,33 @@ body {
 }
 #deploy .box {
   padding-bottom: 20px;
+}
+
+/****************************************************************
+    DESIGNED
+*/
+#designed .ms_text1 {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+#designed img {
+  max-width: 100%;
+  max-height: 100%;
+}
+#designed .fas {
+  margin-top: 90px;
+  font-size: 3em;
+}
+#designed .ms_btn_dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 0px 2px;
+  background-color: transparent;
+  border: 2px solid #0063FF;
+}
+#designed .ms_btn_dot.selected {
+  background-color: #0063FF;
 }
 
 /****************************************************************
@@ -201,7 +228,7 @@ body {
   font-weight: 600;
 }
 .ms_text1 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   /* font-weight: 500; */
 }
 .ms_text2 {
@@ -277,7 +304,6 @@ padding-bottom: 100px;
   font-size: 3em;
   font-weight: 600;
 }
-
 #sticky {
   left: 0;
   background-color: yellow;
@@ -290,7 +316,11 @@ padding-bottom: 100px;
     font-size: 3.5em;
     font-weight: 600;
   }
-
+  #designed .fas {
+    margin-top: 90px;
+    font-size: 3em;
+  }
+  
 }
 /************************************* MD >= 992 */
 @media screen and (min-width: 992px) {
@@ -299,12 +329,20 @@ padding-bottom: 100px;
     right: 0;
     background-color: green;
   }
-
+  #designed .fas {
+    margin-top: 130px;
+    font-size: 3em;
+  }
+  
 }
 /************************************* LG >= 1200 */
 @media screen and (min-width: 1200px) {
 
-
+  #designed .fas {
+    margin-top: 160px;
+    font-size: 3em;
+  }
+  
   
 }
   
@@ -329,80 +367,80 @@ padding-bottom: 100px;
 } */
 .debug [class="row"] {
     border: 1px solid red;
-  }
-  .debug [class*="col-"] {
-    position: relative;
-    background-color: pink;
-    border: 1px solid black;
-    /* height: 80px; */
-  }
-  .debug [class*="col-"]::before {
-    content: "default";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 99999;
-    font-size: 10px;
-    color: white;
-    min-width: 24px;
-    text-align: center;
-    padding: 3px 6px;
-    border-radius: 5px;
-    background-color: rgba(0,0,0,0.6);
-  }
-  .debug [class*="col-xs-1"]::before { content: "xs-1"; line-height: 100%; }
-  .debug [class*="col-xs-2"]::before { content: "xs-2"; line-height: 100%; }
-  .debug [class*="col-xs-3"]::before { content: "xs-3"; line-height: 100%; }
-  .debug [class*="col-xs-4"]::before { content: "xs-4"; line-height: 100%; }
-  .debug [class*="col-xs-5"]::before { content: "xs-5"; line-height: 100%; }
-  .debug [class*="col-xs-6"]::before { content: "xs-6"; line-height: 100%; }
-  .debug [class*="col-xs-7"]::before { content: "xs-7"; line-height: 100%; }
-  .debug [class*="col-xs-8"]::before { content: "xs-8"; line-height: 100%; }
-  .debug [class*="col-xs-9"]::before { content: "xs-9"; line-height: 100%; }
-  .debug [class*="col-xs-10"]::before { content: "xs-10"; line-height: 100%; }
-  .debug [class*="col-xs-11"]::before { content: "xs-11"; line-height: 100%; }
-  .debug [class*="col-xs-12"]::before { content: "xs-12"; line-height: 100%; }
-  @media screen and (min-width: 768px) {
-    .debug [class*="col-sm-1"]::before { content: "sm-1"; line-height: 100%; }
-    .debug [class*="col-sm-2"]::before { content: "sm-2"; line-height: 100%; }
-    .debug [class*="col-sm-3"]::before { content: "sm-3"; line-height: 100%; }
-    .debug [class*="col-sm-4"]::before { content: "sm-4"; line-height: 100%; }
-    .debug [class*="col-sm-5"]::before { content: "sm-5"; line-height: 100%; }
-    .debug [class*="col-sm-6"]::before { content: "sm-6"; line-height: 100%; }
-    .debug [class*="col-sm-7"]::before { content: "sm-7"; line-height: 100%; }
-    .debug [class*="col-sm-8"]::before { content: "sm-8"; line-height: 100%; }
-    .debug [class*="col-sm-9"]::before { content: "sm-9"; line-height: 100%; }
-    .debug [class*="col-sm-10"]::before { content: "sm-10"; line-height: 100%; }
-    .debug [class*="col-sm-11"]::before { content: "sm-11"; line-height: 100%; }
-    .debug [class*="col-sm-12"]::before { content: "sm-12"; line-height: 100%; }
-  }
-  @media screen and (min-width: 992px) {
-    .debug [class*="col-md-1"]::before { content: "md-1"; line-height: 100%; }
-    .debug [class*="col-md-2"]::before { content: "md-2"; line-height: 100%; }
-    .debug [class*="col-md-3"]::before { content: "md-3"; line-height: 100%; }
-    .debug [class*="col-md-4"]::before { content: "md-4"; line-height: 100%; }
-    .debug [class*="col-md-5"]::before { content: "md-5"; line-height: 100%; }
-    .debug [class*="col-md-6"]::before { content: "md-6"; line-height: 100%; }
-    .debug [class*="col-md-7"]::before { content: "md-7"; line-height: 100%; }
-    .debug [class*="col-md-8"]::before { content: "md-8"; line-height: 100%; }
-    .debug [class*="col-md-9"]::before { content: "md-9"; line-height: 100%; }
-    .debug [class*="col-md-10"]::before { content: "md-10"; line-height: 100%; }
-    .debug [class*="col-md-11"]::before { content: "md-11"; line-height: 100%; }
-    .debug [class*="col-md-12"]::before { content: "md-12"; line-height: 100%; }
-  }
-  @media screen and (min-width: 1200px) {
-    .debug [class*="col-lg-1"]::before { content: "lg-1"; line-height: 100%; }
-    .debug [class*="col-lg-2"]::before { content: "lg-2"; line-height: 100%; }
-    .debug [class*="col-lg-3"]::before { content: "lg-3"; line-height: 100%; }
-    .debug [class*="col-lg-4"]::before { content: "lg-4"; line-height: 100%; }
-    .debug [class*="col-lg-5"]::before { content: "lg-5"; line-height: 100%; }
-    .debug [class*="col-lg-6"]::before { content: "lg-6"; line-height: 100%; }
-    .debug [class*="col-lg-7"]::before { content: "lg-7"; line-height: 100%; }
-    .debug [class*="col-lg-8"]::before { content: "lg-8"; line-height: 100%; }
-    .debug [class*="col-lg-9"]::before { content: "lg-9"; line-height: 100%; }
-    .debug [class*="col-lg-10"]::before { content: "lg-10"; line-height: 100%; }
-    .debug [class*="col-lg-11"]::before { content: "lg-11"; line-height: 100%; }
-    .debug [class*="col-lg-12"]::before { content: "lg-12"; line-height: 100%; }
-  }
+}
+.debug [class*="col-"] {
+  position: relative;
+  background-color: pink;
+  border: 1px solid black;
+  /* height: 80px; */
+}
+.debug [class*="col-"]::before {
+  content: "default";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 99999;
+  font-size: 10px;
+  color: white;
+  min-width: 24px;
+  text-align: center;
+  padding: 3px 6px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,0.6);
+}
+.debug [class*="col-xs-1"]::before { content: "xs-1"; line-height: 100%; }
+.debug [class*="col-xs-2"]::before { content: "xs-2"; line-height: 100%; }
+.debug [class*="col-xs-3"]::before { content: "xs-3"; line-height: 100%; }
+.debug [class*="col-xs-4"]::before { content: "xs-4"; line-height: 100%; }
+.debug [class*="col-xs-5"]::before { content: "xs-5"; line-height: 100%; }
+.debug [class*="col-xs-6"]::before { content: "xs-6"; line-height: 100%; }
+.debug [class*="col-xs-7"]::before { content: "xs-7"; line-height: 100%; }
+.debug [class*="col-xs-8"]::before { content: "xs-8"; line-height: 100%; }
+.debug [class*="col-xs-9"]::before { content: "xs-9"; line-height: 100%; }
+.debug [class*="col-xs-10"]::before { content: "xs-10"; line-height: 100%; }
+.debug [class*="col-xs-11"]::before { content: "xs-11"; line-height: 100%; }
+.debug [class*="col-xs-12"]::before { content: "xs-12"; line-height: 100%; }
+@media screen and (min-width: 768px) {
+  .debug [class*="col-sm-1"]::before { content: "sm-1"; line-height: 100%; }
+  .debug [class*="col-sm-2"]::before { content: "sm-2"; line-height: 100%; }
+  .debug [class*="col-sm-3"]::before { content: "sm-3"; line-height: 100%; }
+  .debug [class*="col-sm-4"]::before { content: "sm-4"; line-height: 100%; }
+  .debug [class*="col-sm-5"]::before { content: "sm-5"; line-height: 100%; }
+  .debug [class*="col-sm-6"]::before { content: "sm-6"; line-height: 100%; }
+  .debug [class*="col-sm-7"]::before { content: "sm-7"; line-height: 100%; }
+  .debug [class*="col-sm-8"]::before { content: "sm-8"; line-height: 100%; }
+  .debug [class*="col-sm-9"]::before { content: "sm-9"; line-height: 100%; }
+  .debug [class*="col-sm-10"]::before { content: "sm-10"; line-height: 100%; }
+  .debug [class*="col-sm-11"]::before { content: "sm-11"; line-height: 100%; }
+  .debug [class*="col-sm-12"]::before { content: "sm-12"; line-height: 100%; }
+}
+@media screen and (min-width: 992px) {
+  .debug [class*="col-md-1"]::before { content: "md-1"; line-height: 100%; }
+  .debug [class*="col-md-2"]::before { content: "md-2"; line-height: 100%; }
+  .debug [class*="col-md-3"]::before { content: "md-3"; line-height: 100%; }
+  .debug [class*="col-md-4"]::before { content: "md-4"; line-height: 100%; }
+  .debug [class*="col-md-5"]::before { content: "md-5"; line-height: 100%; }
+  .debug [class*="col-md-6"]::before { content: "md-6"; line-height: 100%; }
+  .debug [class*="col-md-7"]::before { content: "md-7"; line-height: 100%; }
+  .debug [class*="col-md-8"]::before { content: "md-8"; line-height: 100%; }
+  .debug [class*="col-md-9"]::before { content: "md-9"; line-height: 100%; }
+  .debug [class*="col-md-10"]::before { content: "md-10"; line-height: 100%; }
+  .debug [class*="col-md-11"]::before { content: "md-11"; line-height: 100%; }
+  .debug [class*="col-md-12"]::before { content: "md-12"; line-height: 100%; }
+}
+@media screen and (min-width: 1200px) {
+  .debug [class*="col-lg-1"]::before { content: "lg-1"; line-height: 100%; }
+  .debug [class*="col-lg-2"]::before { content: "lg-2"; line-height: 100%; }
+  .debug [class*="col-lg-3"]::before { content: "lg-3"; line-height: 100%; }
+  .debug [class*="col-lg-4"]::before { content: "lg-4"; line-height: 100%; }
+  .debug [class*="col-lg-5"]::before { content: "lg-5"; line-height: 100%; }
+  .debug [class*="col-lg-6"]::before { content: "lg-6"; line-height: 100%; }
+  .debug [class*="col-lg-7"]::before { content: "lg-7"; line-height: 100%; }
+  .debug [class*="col-lg-8"]::before { content: "lg-8"; line-height: 100%; }
+  .debug [class*="col-lg-9"]::before { content: "lg-9"; line-height: 100%; }
+  .debug [class*="col-lg-10"]::before { content: "lg-10"; line-height: 100%; }
+  .debug [class*="col-lg-11"]::before { content: "lg-11"; line-height: 100%; }
+  .debug [class*="col-lg-12"]::before { content: "lg-12"; line-height: 100%; }
+}
   
