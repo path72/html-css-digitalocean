@@ -179,6 +179,9 @@ body {
 #deploy .box {
   padding-bottom: 20px;
 }
+#deploy img {
+  height: 30px;
+}
 
 /****************************************************************
     DESIGNED
@@ -192,7 +195,7 @@ body {
   max-height: 100%;
 }
 #designed .fas {
-  margin-top: 90px;
+  margin-top: 110px;
   font-size: 3em;
 }
 #designed .ms_btn_dot {
@@ -208,32 +211,58 @@ body {
 }
 
 /****************************************************************
+    FEATURES
+*/
+#features a,
+#features .ms_text2 {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+#features img {
+  height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************
     STYICKY THINGS
 */
 
 #sticky {
   position: fixed;
-  /* left: 0; */
+  left: 0;
   bottom: 0;
   z-index: 9999;
   width: 100px;
   height: 100px;
+  background-color: yellow;
 }
 
 /****************************************************************
     COMPONENTS
 */
+
 .ms_payoff {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 600;
 }
-.ms_text1 {
-  font-size: 1.3em;
-  /* font-weight: 500; */
-}
 .ms_text2 {
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
+}
+.ms_text1 {
+  font-size: 1.1em;
+  /* font-weight: 500; */
 }
 .ms_text3 {
   font-size: 1.2em;
@@ -298,17 +327,8 @@ padding-bottom: 100px;
   MEDIA QUERIES
 */
 
-/* XS default */
+/* XS default - SEE ABOVE */
 
-.ms_payoff {
-  font-size: 3em;
-  font-weight: 600;
-}
-#sticky {
-  left: 0;
-  background-color: yellow;
-}
-  
 /************************************* SM >= 768 */
 @media screen and (min-width: 768px) {
 
@@ -316,10 +336,14 @@ padding-bottom: 100px;
     font-size: 3.5em;
     font-weight: 600;
   }
-  #designed .fas {
-    margin-top: 90px;
-    font-size: 3em;
+  .ms_text1 {
+    font-size: 1.3em;
+    /* font-weight: 500; */
   }
+    .ms_text2 {
+    font-size: 2em;
+    font-weight: 700;
+  }  
   
 }
 /************************************* MD >= 992 */
@@ -330,7 +354,7 @@ padding-bottom: 100px;
     background-color: green;
   }
   #designed .fas {
-    margin-top: 130px;
+    margin-top: 150px;
     font-size: 3em;
   }
   
@@ -339,24 +363,12 @@ padding-bottom: 100px;
 @media screen and (min-width: 1200px) {
 
   #designed .fas {
-    margin-top: 160px;
+    margin-top: 180px;
     font-size: 3em;
   }
   
   
 }
-  
-  
-  
-  
-  
-
-
-
-
-
-
-
 
 /****************************************************************
     D E B U G
