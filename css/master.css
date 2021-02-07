@@ -184,21 +184,28 @@ body {
 }
 
 /****************************************************************
-    DESIGNED
+    DESIGNED & DEVELOPMENT
 */
-#designed .ms_text1 {
+#designed .ms_text1,
+#development .ms_text2 {
   display: inline-block;
   margin-bottom: 30px;
 }
-#designed img {
+#designed img,
+#development img {
   max-width: 100%;
   max-height: 100%;
 }
-#designed .fas {
+#designed .fas,
+#development .fas {
   margin-top: 110px;
   font-size: 3em;
 }
-#designed .ms_btn_dot {
+#development .fas {
+  margin-top: 90px;
+}
+#designed .ms_btn_dot,
+#development .ms_btn_dot {
   width: 10px;
   height: 10px;
   border-radius: 100%;
@@ -206,7 +213,11 @@ body {
   background-color: transparent;
   border: 2px solid #0063FF;
 }
-#designed .ms_btn_dot.selected {
+#development .ms_btn_dot {
+  margin-top: 30px;
+}
+#designed .ms_btn_dot.selected,
+#development .ms_btn_dot.selected {
   background-color: #0063FF;
 }
 
@@ -357,6 +368,9 @@ padding-bottom: 100px;
     margin-top: 150px;
     font-size: 3em;
   }
+  #development .fas {
+    margin-top: 120px;
+  }
   
 }
 /************************************* LG >= 1200 */
@@ -365,6 +379,9 @@ padding-bottom: 100px;
   #designed .fas {
     margin-top: 180px;
     font-size: 3em;
+  }
+  #development .fas {
+    margin-top: 160px;
   }
   
   
