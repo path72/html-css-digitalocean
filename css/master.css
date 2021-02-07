@@ -153,24 +153,32 @@ body {
 /****************************************************************
     SPONSORS
 */
-#sponsors .ms_sponsor_logo {
-  padding-top: 27%;
-}
 #sponsors img {
-  transform: translateY(-50%);
-  width: 80%;
+  max-width: 100%;
+  height: 100%;
 }
 #sponsors h3 {
-  color: #868686;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 700;
 }
-#sponsors a {
+
+/****************************************************************
+    DEPLOY
+*/
+#deploy span {
   display: inline-block;
-  color: #0063FF;
+  margin-bottom: 40px;
+}
+#deploy ul {
+  list-style: none;
+  line-height: 2.2em;
+  padding-left: 15px;
+  border-left: 1px solid #868686;
+  margin-bottom: 30px;
+}
+#deploy .box {
   padding-bottom: 20px;
 }
-
 
 /****************************************************************
     STYICKY THINGS
@@ -193,11 +201,15 @@ body {
   font-weight: 600;
 }
 .ms_text1 {
-  font-size: 1.5em;
+  font-size: 1.4em;
   /* font-weight: 500; */
 }
 .ms_text2 {
-  font-size: 1.8em;
+  font-size: 2em;
+  font-weight: 700;
+}
+.ms_text3 {
+  font-size: 1.2em;
   font-weight: 700;
 }
 .ms_text_small_1 {
@@ -229,7 +241,8 @@ body {
 .ms_tx_white { color: white; }
 .ms_tx_blue1 { color: #0063FF; }
 .ms_tx_blue2 { color: #102657; }
-/* standard vertical paddings */
+.ms_tx_grey1 { color: #868686; }
+/* vertical paddings */
 .ms_padding_vert_std {
 padding-top: 100px;
 padding-bottom: 100px;
@@ -259,25 +272,40 @@ padding-bottom: 100px;
 */
 
 /* XS default */
+
+.ms_payoff {
+  font-size: 3em;
+  font-weight: 600;
+}
+
 #sticky {
   left: 0;
   background-color: yellow;
 }
   
-/* SM >= 768 */
+/************************************* SM >= 768 */
 @media screen and (min-width: 768px) {
 
+  .ms_payoff {
+    font-size: 3.5em;
+    font-weight: 600;
+  }
+
 }
-/* MD >= 992 */
+/************************************* MD >= 992 */
 @media screen and (min-width: 992px) {
+
   #sticky {
     right: 0;
     background-color: green;
   }
+
 }
-/* LG >= 1200 */
+/************************************* LG >= 1200 */
 @media screen and (min-width: 1200px) {
 
+
+  
 }
   
   
