@@ -27,62 +27,12 @@
 
   </head>
   <body class="ms_tx_grey1 debu">
-    <!-------------------------------------------------------
-
-    esercizio di oggi:
-    cartella/repo html-css-digitalocean
-
-    Ricreiamo il layout responsive di Digitalocean seguendo gli screenshot allegati.
-
-    Possiamo utilizzare tutte le regole viste fino ad ora, 
-    se volete anche Bootstrap 3 o 12bool.
-
-    Avrete diversi giorni per completare il layout, 
-    come sempre partite dall'analisi delle macroaree.
-
-    Questa volta essendo un layout molto lungo concentriamoci a portare a termine
-    sezione per sezione anche in formato responsive, 
-    quando una macroarea funziona allora passiamo alla successiva.
-
-    Consigli
-    1. Fate particolare attenzione a quelle aree dove abbiamo 
-        immagini di formati diversi, 
-        dobbiamo trovare un modo per renderle uniformi...
-    2. Se delle aree sono simili... 
-        allora forse possiamo usare le stesse classi!
-
-    https://www.digitalocean.com/
-
-
-    --------------------------------------
-
-
-
-
-    --------------------------------------
-
-    fino a sponsors:
-        tablet = desktop, a meno del collasso navbar: xs smartphone xs < sm tablet+desktop
-
-    --------------------------------------
-
-    Point at which the navbar becomes uncollapsed   
-    https://getbootstrap.com/docs/3.4/customize/
-    @grid-float-breakpoint: @screen-md-min
-
-    --------------------------------------
-
-    FONT AWESOME BUTTON
-    <a href="#" class="btn btn-lg ms_btn" role="button"><i class="fas fa-download"></i>Sign Up</a>
-
-
-    -------------------------------------------------------->
 
     <header>
 
       <!-- NAVBAR -->
-      <div id="navbar" class="s_w80c">
-        <nav class="navbar navbar-default ms_nav">
+      <div id="navbar" class="s_bg_white">
+        <nav class="navbar navbar-default navbar-fixed-top ms_nav">
           <div class="container">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -199,54 +149,51 @@
           <div class="row">
             <div class="col-xs-12">
               <div class="ms_w80c">
-                <!-- <div class="container-fluid"> -->
-                  <div class="row">
-                    <div class="col-sm-4">
-                      <ul class="ms_text1">
-                        <li>Deploy</li>
-                        <li>Manage</li>
-                        <li>Secure</li>
-                        <li>Scale</li>
-                        <li>Monitor</li>
-                      </ul>                                
+                <div class="row">
+                  <div class="col-sm-4">
+                    <ul class="ms_text1">
+                      <li>Deploy</li>
+                      <li>Manage</li>
+                      <li>Secure</li>
+                      <li>Scale</li>
+                      <li>Monitor</li>
+                    </ul>                                
+                  </div>
+                  <div class="col-sm-8">
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="ms_box">
+                          <img src="img/cluster-deploy.svg" alt="">
+                          <h4 class="ms_text3 ms_tx_blue2">Cluster Deployments</h4>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita
+                        </div>
+                      </div>                  
+                      <div class="col-sm-6">
+                        <div class="ms_box">
+                          <img src="img/optimized-compute.svg" alt="">
+                          <h4 class="ms_text3 ms_tx_blue2">Optimized compute types</h4>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita 
+                        </div>      
+                      </div>
                     </div>
-                    <div class="col-sm-8">
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="ms_box">
-                            <img src="img/cluster-deploy.svg" alt="">
-                            <h4 class="ms_text3 ms_tx_blue2">Cluster Deployments</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita
-                          </div>
-                        </div>                  
-                        <div class="col-sm-6">
-                          <div class="ms_box">
-                            <img src="img/optimized-compute.svg" alt="">
-                            <h4 class="ms_text3 ms_tx_blue2">Optimized compute types</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita 
-                          </div>      
-                        </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="ms_box">
+                          <img src="img/one-click.svg" alt="">
+                          <h4 class="ms_text3 ms_tx_blue2">One-click apps</h4>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita 
+                        </div>      
                       </div>
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="ms_box">
-                            <img src="img/one-click.svg" alt="">
-                            <h4 class="ms_text3 ms_tx_blue2">One-click apps</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita 
-                          </div>      
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="ms_box">
-                            <img src="img/global.svg" alt="">
-                            <h4 class="ms_text3 ms_tx_blue2">Global availability</h4>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita 
-                          </div>      
-                        </div>
+                      <div class="col-sm-6">
+                        <div class="ms_box">
+                          <img src="img/global.svg" alt="">
+                          <h4 class="ms_text3 ms_tx_blue2">Global availability</h4>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae expedita 
+                        </div>      
                       </div>
-                    </div> <!-- seconda colonna della riga unica della seconda riga -->
-                  </div> <!-- riga unica della seconda riga -->
-                <!-- </div>  -->
-                <!-- container intermedio 80% (di 80%) -->
+                    </div>
+                  </div> <!-- seconda colonna della riga unica della seconda riga -->
+                </div> <!-- riga unica della seconda riga -->
               </div> <!-- wrapper interno 80% (di 80%) -->
             </div> <!-- colonna unica della seconda riga 80% -->
           </div> <!-- seconda riga 80% -->

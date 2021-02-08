@@ -52,6 +52,7 @@ body {
   border: 1px solid #006AFF;
   border-radius: 3px;
   margin-top: 9px;
+  margin-right: 15px;
   line-height: 100%;
   color: #006AFF;
   transition: background-color 0.3s ease 0.1s;
@@ -68,6 +69,7 @@ body {
 #navbar .navbar-default.ms_nav .navbar-toggle {
   border: none;
   margin-top: 7px;
+  margin-right: 5px;
   margin-bottom: 7px;
 }
 #navbar .navbar-default.ms_nav .navbar-toggle:hover {
@@ -92,6 +94,7 @@ body {
     JUMBOTRON
 */
 #jumbotron {
+  margin-top: 50px;
   background-image: url("../img/jumbo_bg.svg");
   background-size: 100%;
 }
