@@ -381,6 +381,66 @@ footer ul li:first-child {
   display: block;
 }
 
+/*************************************
+    MENU OVERLAY
+*/
+#navbar .navbar-default.ms_nav .navbar-toggle .overlay {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  top: 55px;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 500px;
+  transition: all 0.2s ease 0s;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle .overlay .ovarlay_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.7%,-50%);
+  width: 97%;
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle .overlay .ovarlay_content:before {
+  content: "Ciao!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.7%,-50%);
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl {
+  display: none;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .overlay {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease 0s;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle {
+  padding: 9px 10px 0px;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle .ms_visible_btn:hover {
+  cursor: pointer;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl + label .ms_close {
+  display: none;
+  color: white;
+  line-height: 23px;
+  font-size: 1.9em;
+  padding: 0 3px;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .ms_open {
+  display: none;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .ms_close {
+  display: block;
+}
+
 /****************************************************************
     TEXTS
 */
