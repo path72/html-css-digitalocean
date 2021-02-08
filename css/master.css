@@ -373,6 +373,7 @@ footer ul li:first-child {
 }
 #sticky .ms_bubble:before {
   content: "Can I help answer any questions you have about DigitalOcean?";
+  font-weight: 600;
 }
 #sticky .ms_bubble.ms_bleft {
   display: none;
