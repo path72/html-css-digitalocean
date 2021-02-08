@@ -202,7 +202,7 @@ body {
   font-size: 3em;
 }
 #development [class*="fa-angle"] {
-  margin-top: 150px;
+  margin-top: 180px;
 }
 #designed .ms_btn_dot,
 #development .ms_btn_dot {
@@ -257,11 +257,18 @@ body {
   height: 30px;
 }
 
-
-
-
-
-
+/****************************************************************
+    SERVICE
+*/
+#service {
+  background-image: linear-gradient(#0136e6, #1100ad);
+}
+#service .table > tbody > tr:first-child > td {
+  border-top: none;
+}
+#service .table a:hover {
+  color: white;
+}
 
 
 
@@ -338,6 +345,7 @@ body {
 .ms_tx_blue1 { color: #0063FF; }
 .ms_tx_blue2 { color: #102657; }
 .ms_tx_grey1 { color: #868686; }
+.ms_tx_acqua { color: #00ccff; }
 /* vertical paddings */
 .ms_padding_vert_std {
 padding-top: 100px;
@@ -402,7 +410,7 @@ padding-bottom: 100px;
     font-size: 3em;
   }
   #development [class*="fa-angle"] {
-    margin-top: 150px;
+    margin-top: 160px;
   }
   
 }
