@@ -321,23 +321,69 @@ footer ul li:first-child {
 }
 
 /****************************************************************
-    STICKY THINGS
+    STICKY FISH
 */
-
 #sticky {
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 20px;
   z-index: 9999;
-  width: 100px;
-  height: 100px;
-  background-color: yellow;
+}
+#sticky .ms_box {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  margin: 0 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#sticky img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50px;
+}
+#sticky .ms_bubble {
+  position: relative;
+  width: 250px;
+  height: 55px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#sticky .ms_bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent #FFFFFF;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: 30px;
+}
+#sticky .ms_bubble.ms_bleft:after {
+  border-width: 8px 0 8px 15px;
+  right: -15px;
+}
+#sticky .ms_bubble.ms_bright:after {
+  border-width: 8px 15px 8px 0;
+  left: -15px;
+}
+#sticky .ms_bubble:before {
+  content: "Can I help answer any questions you have about DigitalOcean?";
+}
+#sticky .ms_bubble.ms_bleft {
+  display: none;
+}
+#sticky .ms_bubble.ms_bright {
+  display: block;
 }
 
 /****************************************************************
-    COMPONENTS
+    TEXTS
 */
-
 .ms_payoff {
   font-size: 3em;
   font-weight: 600;
@@ -391,22 +437,10 @@ footer ul li:first-child {
 .ms_tx_grey1 { color: #868686; }
 .ms_tx_acqua { color: #00ccff; }
 /* vertical paddings */
-.ms_padding_vert_std {
-padding-top: 100px;
-padding-bottom: 100px;
-}
-.ms_padding_vert_medium {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.ms_padding_vert_small {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.ms_padding_vert_min {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
+.ms_padding_vert_big    { padding-top: 100px; padding-bottom: 100px; }
+.ms_padding_vert_medium { padding-top:  60px; padding-bottom:  60px; }
+.ms_padding_vert_small  { padding-top:  30px; padding-bottom:  30px; }
+.ms_padding_vert_min    { padding-top:  10px; padding-bottom:  10px; }
 .ms_float_l { float: left; }
 .ms_float_r { float: right; }
 .ms_clearfix {
@@ -461,7 +495,13 @@ padding-bottom: 100px;
 
   #sticky {
     right: 0;
-    background-color: green;
+    left: unset;
+  }
+  #sticky .ms_bubble.ms_bleft {
+    display: block;
+  }
+  #sticky .ms_bubble.ms_bright {
+    display: none;
   }
   #designed [class*="fa-angle"] {
     margin-top: 150px;
