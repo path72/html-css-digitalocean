@@ -55,8 +55,6 @@ body {
   margin-right: 15px;
   line-height: 100%;
   color: #006AFF;
-  transition: background-color 0.3s ease 0.1s;
-  transition: color 0.3s ease 0s;
 }
 #navbar .navbar-default.ms_nav .navbar-nav>li>a.ms_btn:hover {
   color: white;
@@ -247,7 +245,6 @@ body {
   padding: 20px 0;
 }
 
-
 /****************************************************************
     FEATURES
 */
@@ -273,9 +270,26 @@ body {
   color: white;
 }
 
+/****************************************************************
+    GETSTARTED
+*/
+#getstarted {
+  background-image: linear-gradient(#0136e6, #1100ad);
+}
+#getstarted .btn.ms_btn {
+  padding: 6px 10px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+#getstarted .btn.ms_btn:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: #0136e6;
+}
 
-
-
+/****************************************************************
+    FOOTER
+*/
 
 
 
@@ -366,12 +380,16 @@ padding-bottom: 100px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.float_l { float: left; }
-.float_r { float: right; }
-.clearfix {
+.ms_float_l { float: left; }
+.ms_float_r { float: right; }
+.ms_clearfix {
   content: "";
   display: table;
   clear: both;
+}
+.ms_btn_trans {
+  transition: background-color 0.3s ease 0.2s;
+  transition: color 0.2s ease 0s;
 }
 
 /****************************************************************
