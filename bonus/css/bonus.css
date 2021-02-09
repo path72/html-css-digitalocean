@@ -12,6 +12,51 @@
   height: 500px;
   transition: all 0.2s ease 0s;
 }
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl {
+  display: none;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .overlay {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease 0s;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle {
+  padding: 0;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle .ms_visible_btn:hover {
+  cursor: pointer;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl + label {
+  padding: 0;
+  margin: 0;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl + label .ms_open {
+  padding: 10px;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl + label .ms_close {
+  display: none;
+  line-height: 23px;
+  font-size: 1.9em;
+  padding: 10px 13px;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .ms_open {
+  display: none;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .ms_close {
+  display: block;
+  color: #0063FF;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label:hover .ms_close {
+  color: white;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle {
+  border: none;
+  margin-top: 7px;
+  margin-right: 5px;
+  margin-bottom: 0 !important;
+}
+
+/* overlay content */
 #navbar .navbar-default.ms_nav .navbar-toggle .overlay .ovarlay_content {
   position: absolute;
   top: 50%;
@@ -30,33 +75,6 @@
 #navbar .navbar-default.ms_nav .navbar-toggle .overlay .ovarlay_content div+div {
   margin-top: 30px;
 }
-#navbar .navbar-default.ms_nav .navbar-toggle #btnControl {
-  display: none;
-}
-#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .overlay {
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.2s ease 0s;
-}
-#navbar .navbar-default.ms_nav .navbar-toggle {
-  padding: 9px 10px 0px;
-}
-#navbar .navbar-default.ms_nav .navbar-toggle .ms_visible_btn:hover {
-  cursor: pointer;
-}
-#navbar .navbar-default.ms_nav .navbar-toggle #btnControl + label .ms_close {
-  display: none;
-  color: white;
-  line-height: 23px;
-  font-size: 1.9em;
-  padding: 0 3px;
-}
-#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .ms_open {
-  display: none;
-}
-#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .ms_close {
-  display: block;
-}
 
 /****************************************************************
     STICKY FISH
@@ -66,7 +84,7 @@
   left: 0;
   bottom: 20px;
   z-index: 9999;
-  animation: left 1s ease-out 1s 1 alternate;
+  animation: left 1s ease-out 0.3s 1 alternate;
 }
 #sticky .ms_box {
   position: relative;
@@ -152,7 +170,7 @@
   #sticky {
     right: 0;
     left: unset;
-    animation: right 1s ease-out 1s 1 alternate;
+    animation: right 1s ease-out 0.3s 1 alternate;
   }
   #sticky .ms_bubble.ms_bleft {
     display: block;
