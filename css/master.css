@@ -179,9 +179,14 @@ body {
 #deploy ul {
   list-style: none;
   line-height: 2.2em;
-  padding-left: 15px;
-  border-left: 1px solid #868686;
   margin-bottom: 30px;
+}
+#deploy ul li {
+  border-left: 1px solid #868686;
+  padding-left: 15px;
+}
+#deploy ul li:first-child{
+  border-left: 2px solid #0063FF;
 }
 #deploy .ms_box {
   padding-bottom: 20px;
@@ -303,7 +308,6 @@ footer img + div {
   padding-top: 10px;
 }
 footer img + div + div {
-  color: #646464;
   padding-bottom: 10px;
 }
 footer ul.ms_social .fab {
@@ -318,6 +322,7 @@ footer ul:not(.ms_social) li a {
 footer ul li:first-child {
   color: white;
   font-weight: bold;
+  margin-bottom: 5px;
 }
 
 /****************************************************************
@@ -496,6 +501,8 @@ footer ul li:first-child {
 .ms_tx_blue1 { color: #0063FF; }
 .ms_tx_blue2 { color: #102657; }
 .ms_tx_grey1 { color: #868686; }
+.ms_tx_grey2 { color: #a1a1a1; }
+.ms_tx_grey3 { color: #646464; }
 .ms_tx_acqua { color: #00ccff; }
 /* vertical paddings */
 .ms_padding_vert_big    { padding-top: 100px; padding-bottom: 100px; }
