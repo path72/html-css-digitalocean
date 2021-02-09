@@ -435,16 +435,6 @@ footer ul li:first-child {
 /************************************* MD >= 992 */
 @media screen and (min-width: 992px) {
 
-  #sticky {
-    right: 0;
-    left: unset;
-  }
-  #sticky .ms_bubble.ms_bleft {
-    display: block;
-  }
-  #sticky .ms_bubble.ms_bright {
-    display: none;
-  }
   #designed [class*="fa-angle"] {
     margin-top: 150px;
     font-size: 3em;
@@ -464,8 +454,7 @@ footer ul li:first-child {
   #development [class*="fa-angle"] {
     margin-top: 150px;
   }
-  
-  
+    
 }
 
 /****************************************************************

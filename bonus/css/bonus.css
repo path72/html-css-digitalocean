@@ -1,65 +1,3 @@
-/****************************************************************
-    STICKY FISH
-*/
-#sticky {
-  position: fixed;
-  left: 0;
-  bottom: 20px;
-  z-index: 9999;
-}
-#sticky .ms_box {
-  position: relative;
-  width: 55px;
-  height: 55px;
-  border-radius: 8px;
-  margin: 0 20px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-#sticky img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: 50px;
-}
-#sticky .ms_bubble {
-  position: relative;
-  width: 250px;
-  height: 55px;
-  padding: 10px;
-  background: #FFFFFF;
-  border-radius: 6px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-#sticky .ms_bubble:after {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-color: transparent #FFFFFF;
-  display: block;
-  width: 0;
-  z-index: 1;
-  top: 30px;
-}
-#sticky .ms_bubble.ms_bleft:after {
-  border-width: 8px 0 8px 15px;
-  right: -15px;
-}
-#sticky .ms_bubble.ms_bright:after {
-  border-width: 8px 15px 8px 0;
-  left: -15px;
-}
-#sticky .ms_bubble:before {
-  content: "Can I help answer any questions you have about DigitalOcean?";
-  font-weight: 600;
-}
-#sticky .ms_bubble.ms_bleft {
-  display: none;
-}
-#sticky .ms_bubble.ms_bright {
-  display: block;
-}
-
 /*************************************
     MENU OVERLAY
 */
@@ -118,4 +56,113 @@
 }
 #navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .ms_close {
   display: block;
+}
+
+/****************************************************************
+    STICKY FISH
+*/
+#sticky {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  z-index: 9999;
+  animation: left 1s ease-out 1s 1 alternate;
+}
+#sticky .ms_box {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  margin: 0 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#sticky img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50px;
+}
+#sticky .ms_bubble {
+  position: relative;
+  width: 250px;
+  height: 55px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#sticky .ms_bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent #FFFFFF;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: 30px;
+}
+#sticky .ms_bubble.ms_bleft:after {
+  border-width: 8px 0 8px 15px;
+  right: -15px;
+}
+#sticky .ms_bubble.ms_bright:after {
+  border-width: 8px 15px 8px 0;
+  left: -15px;
+}
+#sticky .ms_bubble:before {
+  content: "Can I help answer any questions you have about DigitalOcean?";
+  font-weight: 600;
+}
+#sticky .ms_bubble.ms_bleft {
+  display: none;
+}
+#sticky .ms_bubble.ms_bright {
+  display: block;
+}
+
+/****************************************************************
+    ANIMATIONS
+*/
+@keyframes left {
+  0%   {left: 0;}
+  25%  {left: 50px:}
+  50%  {left: 100px;}
+}
+@keyframes right {
+  0%   {right: 0;}
+  25%  {right: 50px:}
+  50%  {right: 100px;}
+}
+
+/****************************************************************
+  MEDIA QUERIES
+*/
+
+/* XS default - SEE ABOVE */
+
+/************************************* SM >= 768 */
+@media screen and (min-width: 768px) {
+
+}
+
+/************************************* MD >= 992 */
+@media screen and (min-width: 992px) {
+
+  #sticky {
+    right: 0;
+    left: unset;
+    animation: right 1s ease-out 1s 1 alternate;
+  }
+  #sticky .ms_bubble.ms_bleft {
+    display: block;
+  }
+  #sticky .ms_bubble.ms_bright {
+    display: none;
+  }
+
+}
+/************************************* LG >= 1200 */
+@media screen and (min-width: 1200px) {
+  
 }
