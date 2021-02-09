@@ -1,0 +1,121 @@
+/****************************************************************
+    STICKY FISH
+*/
+#sticky {
+  position: fixed;
+  left: 0;
+  bottom: 20px;
+  z-index: 9999;
+}
+#sticky .ms_box {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  border-radius: 8px;
+  margin: 0 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#sticky img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 50px;
+}
+#sticky .ms_bubble {
+  position: relative;
+  width: 250px;
+  height: 55px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#sticky .ms_bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-color: transparent #FFFFFF;
+  display: block;
+  width: 0;
+  z-index: 1;
+  top: 30px;
+}
+#sticky .ms_bubble.ms_bleft:after {
+  border-width: 8px 0 8px 15px;
+  right: -15px;
+}
+#sticky .ms_bubble.ms_bright:after {
+  border-width: 8px 15px 8px 0;
+  left: -15px;
+}
+#sticky .ms_bubble:before {
+  content: "Can I help answer any questions you have about DigitalOcean?";
+  font-weight: 600;
+}
+#sticky .ms_bubble.ms_bleft {
+  display: none;
+}
+#sticky .ms_bubble.ms_bright {
+  display: block;
+}
+
+/*************************************
+    MENU OVERLAY
+*/
+#navbar .navbar-default.ms_nav .navbar-toggle .overlay {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  top: 55px;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 500px;
+  transition: all 0.2s ease 0s;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle .overlay .ovarlay_content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50.7%,-50%);
+  width: 97%;
+  height: 100%;
+  background-color: white;
+  padding: 10%;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle .overlay .ovarlay_content .fa-quote-left {
+  font-size: 4em;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle .overlay .ovarlay_content div+div {
+  margin-top: 30px;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl {
+  display: none;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .overlay {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease 0s;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle {
+  padding: 9px 10px 0px;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle .ms_visible_btn:hover {
+  cursor: pointer;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl + label .ms_close {
+  display: none;
+  color: white;
+  line-height: 23px;
+  font-size: 1.9em;
+  padding: 0 3px;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .ms_open {
+  display: none;
+}
+#navbar .navbar-default.ms_nav .navbar-toggle #btnControl:checked + label .ms_close {
+  display: block;
+}
