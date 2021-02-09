@@ -273,6 +273,9 @@ body {
 #service .table > tbody > tr:first-child > td {
   border-top: none;
 }
+#service .table > tbody > tr > td:first-child  {
+  font-weight: 700;
+}
 #service .table a:hover {
   color: white;
 }
