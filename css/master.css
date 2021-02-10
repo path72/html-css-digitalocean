@@ -134,19 +134,23 @@ body {
   border-radius: 3px;
 }
 #jumbotron .ms_login_box .btn.ms_btn:last-child {
+  position: relative;
   color: inherit;
   font-weight: 600;
   background-color: white;
   border: 1px solid rgb(0 0 0 / 8%);
   box-shadow: 1px 1px 1px rgb(0 0 0 / 8%);
 }
-#jumbotron .ms_login_box .btn.ms_btn:last-child img {
-  width: 12px;
-}
-#jumbotron .ms_login_box .btn.ms_btn:last-child div {
-  position: relative;
-  left: -5px;
-  text-align: center;
+#jumbotron .ms_login_box .btn.ms_btn:last-child:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/google-icon.png");
+  background-size: 15px;
 }
 #jumbotron .ms_login_box .ms_text_small a {
   text-decoration: underline;
@@ -156,9 +160,12 @@ body {
 /****************************************************************
     SPONSORS
 */
+/* TODO rimetti a posto qui */
 #sponsors img {
   max-width: 100%;
-  height: 100%;
+  /* height: 100%; */
+  /* height: 200px; */
+  min-height: 200px;
 }
 #sponsors h3 {
   font-size: 1.1em;

@@ -108,7 +108,8 @@
   padding: 10px;
   background: #FFFFFF;
   border-radius: 6px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.2));
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
 }
 #sticky .ms_bubble:after {
   content: '';
@@ -144,12 +145,12 @@
 */
 @keyframes left {
   0%   {left: 0;}
-  25%  {left: 50px:}
+  25%  {left: 50px;}
   50%  {left: 100px;}
 }
 @keyframes right {
   0%   {right: 0;}
-  25%  {right: 50px:}
+  25%  {right: 50px;}
   50%  {right: 100px;}
 }
 
